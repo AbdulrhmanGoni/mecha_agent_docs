@@ -1,0 +1,17 @@
+:root {
+  --ifm-color-primary: #0088ff;
+  --ifm-color-primary-dark: #0073d7;
+  --ifm-color-primary-darker: #005cac;
+  --ifm-color-primary-darkest: #003d73;
+
+  --ifm-color-primary-light: #2b9cff;
+  --ifm-color-primary-lighter: #45a8ff;
+  --ifm-color-primary-lightest: #6cbaff;
+  --ifm-code-font-size: 95%;
+  --card-background-color: #f1f1f1;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --card-background-color: #292929;
+}
