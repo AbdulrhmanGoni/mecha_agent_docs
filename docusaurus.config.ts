@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/mecha_agent_logo-50x50.webp',
 
   url: 'https://abdulrhmangoni.github.io',
-  baseUrl: '/mecha_agent_docs',
+  baseUrl: '/mecha_agent_docs/',
 
   organizationName: "AbdulrhmanGoni",
   projectName: "mecha_agents_docs",
