@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## What is Mecha Agent ?
 
-**Mecha Agent** is a web application is where users can create their own AI agent chatbots, Give them custom instructions and 
+**Mecha Agent** is a web application where users can create their own AI agent chatbots, Give them custom instructions and 
 knowledge, And publish them for the world to interact and chat with.
 
 ## Main Features ✨

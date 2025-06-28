@@ -65,7 +65,12 @@ const config: Config = {
       links: [
         {
           title: 'Docs',
-          items: [],
+          items: [
+            {
+              label: 'Intro',
+              to: '/docs/intro',
+            },
+          ],
         },
         {
           title: 'Mecha Agent',
