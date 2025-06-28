@@ -9,9 +9,23 @@
   --ifm-color-primary-lightest: #6cbaff;
   --ifm-code-font-size: 95%;
   --card-background-color: #f1f1f1;
+  --card-shadow: #929292;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
   --card-background-color: #292929;
+  --card-shadow: #0d0d0d;
 }
+
+.details-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 5rem;
+  padding: 3rem 0px;
+
+}
+
+@import url("./cards.css");

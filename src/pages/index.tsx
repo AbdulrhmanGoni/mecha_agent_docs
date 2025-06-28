@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
+import Features from '@site/src/components/Features';
 
 function HomepageHero() {
   const { siteConfig } = useDocusaurusContext();
@@ -34,6 +35,9 @@ export default function Home(): ReactNode {
         "And publish them for the world to interact and chat with."
       }>
       <HomepageHero />
+      <main className="details-sections">
+        <Features />
+      </main>
     </Layout>
   );
 }
