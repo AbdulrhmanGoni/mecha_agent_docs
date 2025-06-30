@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import Features from '@site/src/components/Features';
+import HowToUse from '@site/src/components/HowToUse';
 
 function HomepageHero() {
   const { siteConfig } = useDocusaurusContext();
@@ -37,6 +38,7 @@ export default function Home(): ReactNode {
       <HomepageHero />
       <main className="details-sections">
         <Features />
+        <HowToUse />
       </main>
     </Layout>
   );
