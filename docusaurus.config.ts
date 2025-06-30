@@ -70,6 +70,10 @@ const config: Config = {
               label: 'Onboarding',
               to: '/docs/get-started/onboarding',
             },
+            {
+              label: 'Inference Client',
+              to: '/docs/get-started/inference-client',
+            },
           ],
         },
         {
