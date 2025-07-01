@@ -37,12 +37,12 @@ import TabItem from '@theme/TabItem';
     <Tabs groupId="frameworks">
         <TabItem value="nextjs" label="Next.js">
             ```shell
-            npx @mecha-agent-inference-client/cli -ts nextjs
+            npx @mecha_agent_inference_client/cli nextjs -ts
             ```
         </TabItem>
         <TabItem value="sveltekit" label="Sveltekit">
             ```shell
-            npx @mecha-agent-inference-client/cli -ts sveltekit
+            npx @mecha_agent_inference_client/cli sveltekit -ts
             ```
         </TabItem>
     </Tabs>
@@ -52,7 +52,7 @@ import TabItem from '@theme/TabItem';
     :::
 
     :::tip
-        You can use `pnpm dlx`, `yarn dlx` or `bunx` to run our `@mecha-agent-inference-client/cli` CLI tool.
+        You can use `pnpm dlx`, `yarn dlx` or `bunx` to run our `@mecha_agent_inference_client/cli` CLI tool.
     :::
 
     :::info
@@ -65,12 +65,12 @@ import TabItem from '@theme/TabItem';
     <Tabs groupId="frameworks">
         <TabItem value="nextjs" label="Next.js">
             ```shell
-            npm install @mecha-agent-inference-client/nextjs
+            npm install @mecha_agent_inference_client/nextjs
             ```
         </TabItem>
         <TabItem value="sveltekit" label="Sveltekit">
             ```shell
-            npm install @mecha-agent-inference-client/sveltekit
+            npm install @mecha_agent_inference_client/sveltekit
             ```
         </TabItem>
     </Tabs>
@@ -84,7 +84,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="nextjs" label="Next.js">
             ```ts
             // app/api/mecha-agent/route.(ts or .js) 
-            import { handler } from "@mecha-agent-inference-client/nextjs";
+            import { handler } from "@mecha_agent_inference_client/nextjs";
 
             export const routeHandler = handler({
                 agentId: process.env.AGENT_ID as string,
@@ -107,7 +107,7 @@ import TabItem from '@theme/TabItem';
             ```ts
             // routes/api/mecha-agent/+server.(ts or .js) 
             import { MECHA_AGENT_API_KEY, AGENT_ID } from "$env/static/private";
-            import { handler } from "@mecha-agent-inference-client/sveltekit/server";
+            import { handler } from "@mecha_agent_inference_client/sveltekit/server";
 
             export const fallback = handler({
                 agentId: AGENT_ID,
@@ -158,14 +158,14 @@ Now you are ready to use the **Inference Client** in your app!, Just import the 
 <Tabs groupId="framework">
     <TabItem value="nextjs" label="Next.js">
     ```tsx
-    import { MechaAgentChat } from "@mecha-agent-inference-client/nextjs";
+    import { MechaAgentChat } from "@mecha_agent_inference_client/nextjs";
 
     <MechaAgentChat /> // Put this somewhere
     ```
     </TabItem>
     <TabItem value="sveltekit" label="Sveltekit">
     ```jsx
-    import { MechaAgentChat } from "@mecha-agent-inference-client/sveltekit";
+    import { MechaAgentChat } from "@mecha_agent_inference_client/sveltekit";
 
     <MechaAgentChat /> // Put this somewhere
     ```
