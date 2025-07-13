@@ -10,7 +10,7 @@ From here I’ll walk you through creating your first AI Agent chat bot, creatin
 
 ## Create an cccount 🪪
 
-First you need to create a **Mecha Agent** account, Go to the [**Mecha Agent**](https://github.com/AbdulrhmanGoni/mecha_agent_client) App and sign in to create your account and then come back here to continue.
+First you need to create a **Mecha Agent** account, Go to the [**Mecha Agent**](https://mecha-agent.netlify.app) App and sign in to create your account and then come back here to continue.
 
 ## Creating your first agent 🤖
 

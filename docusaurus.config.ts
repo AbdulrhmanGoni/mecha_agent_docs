@@ -51,7 +51,7 @@ const config: Config = {
         {
           position: 'left',
           label: 'Pricing',
-          href: 'https://github.com/AbdulrhmanGoni/mecha_agent_client',
+          href: 'https://mecha-agent.netlify.app/plans',
         },
         {
           href: 'https://github.com/AbdulrhmanGoni/mecha_agent',
@@ -80,12 +80,12 @@ const config: Config = {
           title: 'Mecha Agent',
           items: [
             {
-              label: 'Mecha Agent App',
-              href: 'https://github.com/AbdulrhmanGoni/mecha_agent_client',
+              label: 'Mecha Agent Platform',
+              href: 'https://mecha-agent.netlify.app',
             },
             {
               label: 'Pricing',
-              href: 'https://github.com/AbdulrhmanGoni/mecha_agent_client',
+              href: 'https://mecha-agent.netlify.app/plans',
             },
           ],
         },
