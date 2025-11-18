@@ -43,4 +43,4 @@ In the page of your agent, there should be **"Publish Agent"** section in the bo
 
 After publishing the agent, a button says **"Copy public chat link"** is supposed to appear, click on it to copy the url of the public chat page of your agent and share it with whoever you want to chat with your agent
 
-Last but not least, if you want to put your agent into your own website so people can chat with it through your website not our public chat page, you can do it with our [**Mecha Agent Inference Client**](/docs/get-started/inference-client.md) which i will cover the next page.
+Last but not least, if you want to put your agent into your own website so people can chat with it through your website not our public chat page, you can do it with our [**Mecha Agent Inference Client**](/docs/get-started/inference-client.mdx) which i will cover the next page.
