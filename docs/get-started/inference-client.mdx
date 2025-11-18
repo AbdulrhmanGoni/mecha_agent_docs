@@ -1,0 +1,99 @@
+---
+title: Inference Client
+description: A quick tutorial on how to integrate with the inference client.
+sidebar_position: 2
+---
+
+# Mecha Agent Inference Client
+
+The **Mecha Agent Inference Client** is a package that provides a chat UI client you can put into your own web apps so people on the internet can interact and chat with your agents through it.
+
+In this quick tutorial, I’ll walk you through integrating the **Inference Client** with your existing web app.
+
+Here is how the **Inference Client** look 👇
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="theme">
+    <TabItem value="dark" label="Dark">
+    ![Mecha Agent Inference Client dark theme](/img/mecha-agent-interface-client-dark-theme.webp)
+    </TabItem>
+    <TabItem value="light" label="Light">
+    ![Mecha Agent Inference Client light theme](/img/mecha-agent-interface-client-light-theme.webp)
+    </TabItem>
+</Tabs>
+
+## Installation & Setup
+
+:::note
+    We currently support only `Next.js` and `Sveltekit` frameworks, So your web app must be built with these frameworks to be able to add the **Inference Client** into your app.
+:::
+
+import CliSetup from '@site/src/components/CliSetup';
+import ManualSetup from '@site/src/components/ManualSetup';
+
+<Tabs groupId="setup-method">
+    <TabItem value="cli" label="CLI">
+        <CliSetup />
+    </TabItem>
+    <TabItem value="manual" label="Manual">
+        <ManualSetup />
+    </TabItem>
+</Tabs>
+
+## Configuration
+
+### Server side handler 
+
+The server side route handler function accepts the following options as object: 👇
+
+| Option     | Description                                                                       | default value                  |
+| -----------| ----------------------------------------------------------                        | ------------------------------ |
+| agentId    | The ID of the agent you need to set up the interface to chat with                 | `undefined`                    |
+| apiKey     | The Key to authenticate requests of chatting with a private (not published) agent | `undefined`                    |
+| serverHost | The URL of the Mecha Agent server (set when self-hosting your own one)            | `https://mecha-agent.deno.dev` |
+
+#### Getting agent's id
+
+To get your agent's id, Go to `/agents` page and click on your agent to open it up in its full page, 
+Then click on the "copy" icon beside your agent's name to copy it's id
+
+#### Getting an API Key
+
+To bring an API Key, Go to your account in **Mecha Agent Platform** and navigate to `/api-keys` page, 
+Create an API Key there with `inference` and `read` permissions, Click on the "Copy" icon beside the Key in API keys table to 
+copy it. 
+
+:::note
+    You have to keep the API Key private by setting it as environment variable 
+:::
+
+### Client side UI
+
+Import the `MechaAgentChat` component and put it wherever you want in the UI of your project 
+to have a fully functional chat interface for your agent!.
+
+<Tabs groupId="framework">
+    <TabItem value="nextjs" label="Next.js">
+    ```tsx
+    import { MechaAgentChat } from "@mecha_agent_inference_client/nextjs";
+
+    <MechaAgentChat /> // Put this somewhere
+    ```
+    </TabItem>
+    <TabItem value="sveltekit" label="Sveltekit">
+    ```jsx
+    import { MechaAgentChat } from "@mecha_agent_inference_client/sveltekit";
+
+    <MechaAgentChat /> // Put this somewhere
+    ```
+    </TabItem>
+</Tabs>
+
+The **MechaAgentChat** component accepts the following props: 👇
+
+| Prop             | Description                                                                                                  | default value      |
+| ---------------- | ----------------------------------------------------------------------                                       | ------------------ |
+| agentId          | The ID of the agent you need to set up the interface to chat with (overrides the one set in the server side) | `undefined`        |
+| routeHandlerPath | The path to the server side route handler that routes requests to Mecha Agent server                         | `/api/mecha-agent` |
