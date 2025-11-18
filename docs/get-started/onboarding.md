@@ -37,11 +37,10 @@ you can select from it your dataset to associate it with the agent.
 
 ## Publish your agent 🚀
 
-Once you have created your agent, created a dataset for it, added some data into it the dataset, and associated the dataset with your agent, Your agent is now ready to be published !.
+Once you have created your agent, created a dataset for it, added some data into it the dataset, and associated the dataset with your agent, Your agent is now ready to be published!.
 
-To publish your agent go again to `/agents` page and click on your agent to open it in its full page, 
-Then you should see **"Publish Agent"** section in the bottom with a button says **"Publish"**, Click on that button and that's it, Your agent is ready to be accessed by anyone on the internet.
+In the page of your agent, there should be **"Publish Agent"** section in the bottom with a button that says **"Publish"**, click on that button, and that's it!, your agent is public and anyone on the web can chat with it via the public chat page of your agent! 🌐.
 
-The last thing you need is to set up the client interface that the people on the internet can chat with your agent through it,
-This client interface is the [**Mecha Agent Inference Client**](/docs/get-started/inference-client.md) which i will cover the next page.
+After publishing the agent, a button says **"Copy public chat link"** is supposed to appear, click on it to copy the url of the public chat page of your agent and share it with whoever you want to chat with your agent
 
+Last but not least, if you want to put your agent into your own website so people can chat with it through your website not our public chat page, you can do it with our [**Mecha Agent Inference Client**](/docs/get-started/inference-client.md) which i will cover the next page.
